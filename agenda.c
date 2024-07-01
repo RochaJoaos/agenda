@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 #include "contatos.h"
 
 void ver(void);
@@ -41,7 +40,6 @@ int main(void){
 }
 
 void ver(void){
-	int num;
 	Contato contato;
 	Contato contatos[100];
 	
@@ -57,15 +55,10 @@ void ver(void){
         printf("Nome: %s\n", contato.nome);
         printf("Telefone: %d\n\n", contato.numero);
     }
-    fclose(arquivo);
-
-	
+    fclose(arquivo);	
 }
 
 void adicionar(){
-	char nome[50] = "Joao Henrique";
-	int num;
-	
 	Contato contato;
 	Contato contatos[100];
     
@@ -113,7 +106,7 @@ void remover() {
 remove("contatos.bin");
     rename("temp.bin", "contatos.bin");
     if (!encontrado) {
-        printf("Não existe '%s' .\n", nomeRemover);
+        printf("NÃ£o existe '%s' .\n", nomeRemover);
     }
 }
 
