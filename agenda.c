@@ -41,7 +41,6 @@ int main(void){
 
 void ver(void){
 	Contato contato;
-	Contato contatos[100];
 	
 	FILE *arquivo;
     arquivo = fopen("contatos.bin", "rb");
@@ -60,7 +59,6 @@ void ver(void){
 
 void adicionar(){
 	Contato contato;
-	Contato contatos[100];
     
     FILE *arquivo;
     arquivo = fopen("contatos.bin", "ab");
