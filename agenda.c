@@ -5,7 +5,6 @@
 void ver(void);
 void adicionar(void);
 void remover(void);
-int length(void);
 
 int main(void){
 	int opt;
@@ -26,7 +25,7 @@ int main(void){
 			adicionar();
 		break;
 		case 3:
-			system("cls");
+			system("cls");	
 			remover();
 		break;
 		case 4:
